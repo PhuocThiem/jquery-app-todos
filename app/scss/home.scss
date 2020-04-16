@@ -1,0 +1,168 @@
+.header {
+  width: 100vw;
+  height: 60px;
+  background: linear-gradient(90deg, rgba(7, 47, 74, 1) 12%, rgba(10, 113, 156, 1) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  .title {
+    color: rgb(179, 235, 232);
+  }
+  .action {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    button {
+      font-weight: bold;
+      color: whitesmoke;
+    }
+    button:hover {
+      background-color: rgba(19, 165, 158, 0.568);
+      color: black;
+    }
+    p{
+      margin: auto 10px;
+      font-weight: bold;
+      color: whitesmoke;
+    }
+  }
+}
+.content {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  display: flex;
+  background-image: url('../images/afterglow-background-beautiful-branches-552791.jpg');
+  background-size: cover;
+  .create-task {
+    padding: 10px;
+    height: 100%;
+    width: 35vw;
+    form {
+      input {
+        background-color: rgba(255, 255, 255, 0.247);
+        color: white;
+        border: none;
+      }
+      width: 80%;
+      margin: 20px auto;
+      .btn {
+        margin-top: 20px;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        .material-icons{
+          font-size:40px;
+          color:rgba(189, 255, 8, 0.459)
+        }
+        .material-icons:hover{
+          color: rgb(0, 255, 21);
+        }
+      }
+      #create-btn:hover {
+        background-color: rgba(174, 238, 144, 0.349);
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+
+  .list-task {
+    height: 100%;
+    width: 35vw;
+    padding: 10px;
+    .scroll-list {
+      padding: 10px;
+      height: calc(100vh - 120px - 16px - 38px - 10px);
+      width: 100%;
+      overflow-y: scroll;
+      background-color: rgba(255, 255, 255, 0.226);
+      .completed{
+        background-color: green;
+      }
+      #card {
+        border-radius: 5px;
+        background-color: rgba(253, 253, 253, 0.425);
+        height: 100px;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        .taskStatus {
+          display: flex;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .form-control{
+            width: 40%;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0);
+            padding: 6px 2px;
+            font-weight: bold;
+            border: none;
+          }
+          input{
+            margin-right: 5px;
+          }
+        }
+        .taskTimer {
+          display: flex;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          justify-content: space-between;
+        }
+        p {
+          margin-bottom: 5px;
+        }
+        .action {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          .update-btn{
+            padding: 1px 10px 0px 10px;
+            background-color: rgba(195, 214, 25, 0);
+            border: none;
+          }
+          .update-btn:hover{
+            background-color: rgba(4, 255, 117, 0.438);
+          }
+          .delete-btn{
+            padding: 1px 10px 0px 10px;
+            border: none;
+            background-color: rgba(53, 25, 214, 0);
+          }
+          .delete-btn:hover{
+            background-color: rgba(255, 4, 4, 0.527);
+          }
+        }
+      }
+      #card:hover {
+        background-color: rgba(255, 255, 255, 0.808);
+      }
+    }
+  }
+
+  .summary {
+    height: 100%;
+    width: 30vw;
+    padding: 10px;
+  }
+}
+
+.footer {
+  width: 100vw;
+  height: 60px;
+  background: linear-gradient(90deg, rgba(7, 47, 74, 1) 12%, rgba(10, 113, 156, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  div {
+    h4 {
+      margin: 0px;
+    }
+  }
+}

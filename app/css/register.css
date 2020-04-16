@@ -1,0 +1,46 @@
+body {
+  background-image: url("../images/black-and-white-mountain-over-yellow-white-and-blue-sky-46253.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; }
+
+.container {
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .content {
+    width: 500px;
+    height: 500px; }
+    .container .content form {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.473);
+      color: white; }
+      .container .content form .title {
+        display: flex;
+        justify-content: center; }
+        .container .content form .title h1 {
+          font-weight: bold; }
+      .container .content form .form-group input {
+        background-color: rgba(0, 0, 0, 0.445);
+        color: white; }
+      .container .content form .messenger #error-msg {
+        color: red;
+        font-weight: inherit; }
+      .container .content form .action {
+        display: flex;
+        justify-content: center; }
+        .container .content form .action button {
+          background-color: rgba(15, 15, 2, 0.39);
+          width: 100px; }
+        .container .content form .action button:hover {
+          background-color: rgba(45, 189, 45, 0.452); }
+  .container .register-content {
+    display: none; }
+
+.accountAction {
+  display: flex;
+  justify-content: center;
+  padding: 0px; }

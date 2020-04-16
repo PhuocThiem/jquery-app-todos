@@ -1,0 +1,133 @@
+.header {
+  width: 100vw;
+  height: 60px;
+  background: linear-gradient(90deg, #072f4a 12%, #0a719c 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px; }
+  .header .title {
+    color: #b3ebe8; }
+  .header .action {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse; }
+    .header .action button {
+      font-weight: bold;
+      color: whitesmoke; }
+    .header .action button:hover {
+      background-color: rgba(19, 165, 158, 0.568);
+      color: black; }
+    .header .action p {
+      margin: auto 10px;
+      font-weight: bold;
+      color: whitesmoke; }
+
+.content {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  display: flex;
+  background-image: url("../images/afterglow-background-beautiful-branches-552791.jpg");
+  background-size: cover; }
+  .content .create-task {
+    padding: 10px;
+    height: 100%;
+    width: 35vw; }
+    .content .create-task form {
+      width: 80%;
+      margin: 20px auto; }
+      .content .create-task form input {
+        background-color: rgba(255, 255, 255, 0.247);
+        color: white;
+        border: none; }
+      .content .create-task form .btn {
+        margin-top: 20px;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none; }
+        .content .create-task form .btn .material-icons {
+          font-size: 40px;
+          color: rgba(189, 255, 8, 0.459); }
+        .content .create-task form .btn .material-icons:hover {
+          color: #00ff15; }
+      .content .create-task form #create-btn:hover {
+        background-color: rgba(174, 238, 144, 0.349);
+        color: black; }
+  .content .list-task {
+    height: 100%;
+    width: 35vw;
+    padding: 10px; }
+    .content .list-task .scroll-list {
+      padding: 10px;
+      height: calc(100vh - 120px - 16px - 38px - 10px);
+      width: 100%;
+      overflow-y: scroll;
+      background-color: rgba(255, 255, 255, 0.226); }
+      .content .list-task .scroll-list .completed {
+        background-color: green; }
+      .content .list-task .scroll-list #card {
+        border-radius: 5px;
+        background-color: rgba(253, 253, 253, 0.425);
+        height: 100px;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px; }
+        .content .list-task .scroll-list #card .taskStatus {
+          display: flex;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .content .list-task .scroll-list #card .taskStatus .form-control {
+            width: 40%;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0);
+            padding: 6px 2px;
+            font-weight: bold;
+            border: none; }
+          .content .list-task .scroll-list #card .taskStatus input {
+            margin-right: 5px; }
+        .content .list-task .scroll-list #card .taskTimer {
+          display: flex;
+          width: 100%;
+          height: 30%;
+          display: flex;
+          justify-content: space-between; }
+        .content .list-task .scroll-list #card p {
+          margin-bottom: 5px; }
+        .content .list-task .scroll-list #card .action {
+          width: 100%;
+          display: flex;
+          justify-content: space-between; }
+          .content .list-task .scroll-list #card .action .update-btn {
+            padding: 1px 10px 0px 10px;
+            background-color: rgba(195, 214, 25, 0);
+            border: none; }
+          .content .list-task .scroll-list #card .action .update-btn:hover {
+            background-color: rgba(4, 255, 117, 0.438); }
+          .content .list-task .scroll-list #card .action .delete-btn {
+            padding: 1px 10px 0px 10px;
+            border: none;
+            background-color: rgba(53, 25, 214, 0); }
+          .content .list-task .scroll-list #card .action .delete-btn:hover {
+            background-color: rgba(255, 4, 4, 0.527); }
+      .content .list-task .scroll-list #card:hover {
+        background-color: rgba(255, 255, 255, 0.808); }
+  .content .summary {
+    height: 100%;
+    width: 30vw;
+    padding: 10px; }
+
+.footer {
+  width: 100vw;
+  height: 60px;
+  background: linear-gradient(90deg, #072f4a 12%, #0a719c 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  .footer div h4 {
+    margin: 0px; }

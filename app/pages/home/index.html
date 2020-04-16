@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../js/home.js"></script>
+    <script src="../../js/auth/auth.js"></script>
+    <script src="../../js/tasks/tasks.js"></script>
+    <script src="../../js/tasks//templateCard.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title"><h2>Todo list app</h3></div>
+      <div class="action">
+        <button class="btn btn-dark" id="logout-btn"><i class="material-icons" style="font-size:30px;color:orange">power_settings_new</i></button>
+      </div>
+    </header>
+    <div class="content">
+      <div class="create-task">
+        <h2>Create New Task</h2>
+        <form>
+          <input type="text" id="task-input" class="form-control" placeholder="Input a new task" />
+          <button class="btn btn-success" type="submit" id="create-btn"><i class="material-icons">add_circle</i></button>
+        </form>
+      </div>
+      <div class="list-task">
+        <h2>List Task</h2>
+        <div class="scroll-list" id="style-scroll"></div>
+      </div>
+      <div class="summary">
+        <h2>Summary</h2>
+        <div class="detail">
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div><h4>Something will be write here</h4></div>
+    </footer>
+  </body>
+</html>
